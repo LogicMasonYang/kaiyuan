@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<title></title>
+		<style>
+
+		</style>
+	</head>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<body>
+		
+		<div class="input-group">
+			<span class="input-group-addon" id="basic-addon1">有效期</span>
+			<input type="date"  id="date"  class="form-control" placeholder="Text input">
+		</div>
+		<div class="input-group"  style="width: 100%;">
+			<input class="btn btn-default" id="sc" type="button"  style="width: 100%;" value="生成">
+		</div>
+		<div class="input-group" >
+			值 :     <span id="mm"></span>
+		</div>
+		
+		<script src="./lib/jquery.js"></script>
+		<script src="../m1/lib/mm.js"></script>
+		<script>
+			$("#sc").click(function(){
+				if($("#date").val() == ''){
+					alert("未选择有效期！");
+					return ;	
+				}
+				var date  = $("#date").val();
+				date = date.replaceAll("-", "");
+				var mm = generate(date);
+				$("#mm").text(mm);
+			})
+		</script>
+		
+	</body>
+</html>

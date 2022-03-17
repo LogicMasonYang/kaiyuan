@@ -15,93 +15,114 @@
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 	<body>
-		
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">一</span>
-			<input type="text" id="s1" class="form-control" placeholder="" aria-describedby="basic-addon1">
+		<div id = "xs" style="display:block;">
+			<div class="input-group" style="margin-top: 100px;" >
+				<span class="input-group-addon" id="basic-addon1">请输入</span>
+				<input type="text" id="mm" class="form-control"placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<button type="button" class="btn btn-default qdbutton" style="margin-top: 100px;margin-left:40%;text-align: center;" value="确定"> 确定</button>
 		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">二</span>
-			<input type="text" id="s2" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">三</span>
-			<input type="text" id="s3" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">四</span>
-			<input type="text" id="s4" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">五</span>
-			<input type="text" id="s5" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">六</span>
-			<input type="text" id="s6" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">七</span>
-			<input type="text" id="s7" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		<div class="input-group">
-			<span class="input-group-addon" id="basic-addon1">八</span>
-			<input type="text" id="s8" class="form-control" placeholder="" aria-describedby="basic-addon1">
-		</div>
-		
-		<div class="saizi" style="margin-top: 20px;">
-			<span class="label label-default" style="font-size: 20px;">色子数：</span>
-			<div class="btn-group" role="group" aria-label="..." >
-				<button type="button" class="btn btn-default" value="1"> 1 </button>
-				<button type="button" class="btn btn-default" value="2"> 2 </button>
-				<button type="button" class="btn btn-default" value="3"> 3 </button>
-				<button type="button" class="btn btn-default" value="4"> 4 </button>
-				<button type="button" class="btn btn-default" value="5"> 5 </button>
-				<button type="button" class="btn btn-default" value="6"> 6 </button>
+		<div id = "yc" style="display:none;">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">一</span>
+				<input type="text" id="s1" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">二</span>
+				<input type="text" id="s2" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">三</span>
+				<input type="text" id="s3" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">四</span>
+				<input type="text" id="s4" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">五</span>
+				<input type="text" id="s5" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">六</span>
+				<input type="text" id="s6" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">七</span>
+				<input type="text" id="s7" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">八</span>
+				<input type="text" id="s8" class="form-control" placeholder="" aria-describedby="basic-addon1">
+			</div>
+			
+			<div class="saizi" style="margin-top: 20px;">
+				<span class="label label-default" style="font-size: 20px;">色子数：</span>
+				<div class="btn-group" role="group" aria-label="..." >
+					<button type="button" class="btn btn-default saizibutton" value="1"> 1 </button>
+					<button type="button" class="btn btn-default saizibutton" value="2"> 2 </button>
+					<button type="button" class="btn btn-default saizibutton" value="3"> 3 </button>
+					<button type="button" class="btn btn-default saizibutton" value="4"> 4 </button>
+					<button type="button" class="btn btn-default saizibutton" value="5"> 5 </button>
+					<button type="button" class="btn btn-default saizibutton" value="6"> 6 </button>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Panel heading</div>
+				<table class="table">
+					<thead>
+					<tr>
+						<th>#</th>
+						<th>第一把</th>
+						<th>第二把</th>
+						<th>第三把</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr id="r1">
+						<th scope="row">1</th>
+						<td id="r1c1"> </td>
+						<td id="r1c2"> </td>
+						<td id="r1c3"> </td>
+					</tr>
+					<tr id="r2">
+						<th scope="row">2</th>
+						<td id="r2c1"> </td>
+						<td id="r2c2"> </td>
+						<td id="r2c3"> </td>
+					</tr>
+					<tr id="r3">
+						<th scope="row">3</th>
+						<td id="r3c1"> </td>
+						<td id="r3c2"> </td>
+						<td id="r3c3"> </td>
+					</tr>
+					<tr id="r4">
+						<th scope="row">4</th>
+						<td id="r4c1"> </td>
+						<td id="r4c2"> </td>
+						<td id="r4c3"> </td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">Panel heading</div>
-			<table class="table">
-				<thead>
-				  <tr>
-					<th>#</th>
-					<th>第一把</th>
-					<th>第二把</th>
-					<th>第三把</th>
-				  </tr>
-				</thead>
-				<tbody>
-				  <tr id="r1">
-					<th scope="row">1</th>
-					<td id="r1c1"> </td>
-					<td id="r1c2"> </td>
-					<td id="r1c3"> </td>
-				  </tr>
-				  <tr id="r2">
-					<th scope="row">2</th>
-					<td id="r2c1"> </td>
-					<td id="r2c2"> </td>
-					<td id="r2c3"> </td>
-				  </tr>
-				  <tr id="r3">
-					<th scope="row">3</th>
-					<td id="r3c1"> </td>
-					<td id="r3c2"> </td>
-					<td id="r3c3"> </td>
-				  </tr>
-				  <tr id="r4">
-					<th scope="row">4</th>
-					<td id="r4c1"> </td>
-					<td id="r4c2"> </td>
-					<td id="r4c3"> </td>
-				  </tr>
-				</tbody>
-			  </table>
-		  </div>
 		<script src="./lib/jquery.js"></script>
+		<script src="./lib/mm.js"></script>
 		<script>
-			$(":button").click(function(){
+			
+			$(".qdbutton").click(function(){
+				var mm = $("#mm").val();
+				var isPass = checkmm(mm);
+				if(!isPass){
+					alert("无效");
+				}else{
+					$("#xs").css('display','none');
+					$("#yc").css('display','block');
+				}
+			})
+
+			$(".saizibutton").click(function(){
 				var s1 = $("#s1").val();
 				var s1result = toArray(s1);
 				var s2 = $("#s2").val();
