@@ -1,3 +1,0 @@
-1.	$(this) 和 this 关键字在 jQuery 中有何不同？
-    答：表示对象不同：this表示的是javascript提供的当前对象
-                $(this)表示的是用jquery封装后的当前对象
