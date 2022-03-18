@@ -76,6 +76,7 @@ function checkmm(mm){
     if(result.length != 10){
         return false;
     }
+    
     var date = Date.parse(result);
     if(isNaN(date)){
         return false;
